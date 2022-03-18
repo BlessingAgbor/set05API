@@ -1,6 +1,6 @@
-// require('dot.env').config()
+require('dotenv').config()
 const express = require('express')
-const port= 1900
+const port= process.env.port || 1900
 const app = express()
 app.use(express.json())
 
